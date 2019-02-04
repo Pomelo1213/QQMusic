@@ -1,0 +1,27 @@
+$headerBackgroundColor : #31c27c;
+$headerHeight: 44px;
+.header {
+  height: $headerHeight;
+  background: $headerBackgroundColor;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px 0 10px;
+  .qq-music {
+    display: none;
+  }
+  .logo {
+    height: 25px;
+  }
+  .download-app {
+    color: #fff;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 12px;
+    border-radius: 100px;
+    background: #149c5a;
+  }
+}
+
+

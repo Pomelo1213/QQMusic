@@ -1,0 +1,7 @@
+
+.recommand {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

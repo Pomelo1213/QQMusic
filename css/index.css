@@ -1,0 +1,50 @@
+.header {
+  height: 44px;
+  background: #31c27c;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px 0 10px; }
+  .header .qq-music {
+    display: none; }
+  .header .logo {
+    height: 25px; }
+  .header .download-app {
+    color: #fff;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 12px;
+    border-radius: 100px;
+    background: #149c5a; }
+
+.tabs {
+  display: flex;
+  height: 40px;
+  line-height: 40px; }
+  .tabs .tab-item {
+    flex: 1;
+    text-align: center; }
+
+.rank {
+  display: none; }
+  .rank.active {
+    display: block; }
+
+.recommand {
+  display: none; }
+  .recommand.active {
+    display: block; }
+
+.search {
+  display: none; }
+  .search.active {
+    display: block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }

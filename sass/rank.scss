@@ -1,0 +1,7 @@
+
+.rank {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

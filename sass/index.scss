@@ -1,0 +1,15 @@
+@import './headers.scss';
+@import './nav.scss';
+@import './rank.scss';
+@import './recommand.scss';
+@import './search.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}

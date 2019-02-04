@@ -1,0 +1,4 @@
+.rank {
+  display: none; }
+  .rank.active {
+    display: block; }

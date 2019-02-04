@@ -1,0 +1,19 @@
+.header {
+  height: 44px;
+  background: #31c27c;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px 0 10px; }
+  .header .qq-music {
+    display: none; }
+  .header .logo {
+    height: 25px; }
+  .header .download-app {
+    color: #fff;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 12px;
+    border-radius: 100px;
+    background: #149c5a; }
