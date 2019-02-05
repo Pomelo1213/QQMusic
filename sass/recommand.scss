@@ -4,4 +4,15 @@
   &.active {
     display: block;
   }
+  .slider{
+    width:100%;
+    .slider-wrap{
+      display: flex;
+      .slider-item > a{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
 }

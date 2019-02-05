@@ -35,6 +35,12 @@
   display: none; }
   .recommand.active {
     display: block; }
+  .recommand .slider {
+    width: 100%; }
+    .recommand .slider .slider-wrap {
+      display: flex; }
+      .recommand .slider .slider-wrap .slider-item > a img {
+        width: 100%; }
 
 .search {
   display: none; }
