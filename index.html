@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,21 @@
   </header>
   <nav>
     <ul class="tabs">
-      <li class="tab-item" data-role="tab" data-item="recommand">推荐</li>
+      <li class="tab-item active" data-role="tab" data-item="recommand">推荐</li>
       <li class="tab-item" data-role="tab" data-item="rank">排行榜</li>
       <li class="tab-item" data-role="tab" data-item="search">搜索</li>
     </ul>
   </nav>
   <section class="recommand active">
     <div class="slider" id="slider"></div>
+    <div class="radio">
+      <h2 class="radio-title">电台</h2>
+      <ul class="radio-wrap"></ul>
+    </div>
+    <div class="hot-songs">
+      <h2>热门歌单</h2>
+      <ul class="hot-songs-wrap"></ul>
+    </div>
   </section>
   <section class="rank"> this is rank </section>
   <section class="search"> this is search </section>

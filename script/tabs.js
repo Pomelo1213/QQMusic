@@ -7,7 +7,9 @@ document.addEventListener('click', function(event){
   Array.from(allItemEles).forEach(ele => {
     let currentView = findCurrentView(ele)
     currentView.classList.remove('active')
+    ele.classList.remove('active')
   })
+  target.classList.add('active')
   itemEle.classList.add('active')
 })
 

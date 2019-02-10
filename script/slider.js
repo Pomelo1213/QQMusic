@@ -2,7 +2,7 @@ class Slider {
   constructor({el, sliders, interval}){
     this.el = el
     this.sliders = sliders
-    this.interval = interval | 1000
+    this.interval = interval | 1500
     this.currentIndex = 0
     // console.log(this.el)
     this.render()
@@ -28,9 +28,9 @@ class Slider {
   }
 
   next(){
-    if(this.currentIndex > this.sliders.length){
-      this.wrapEle.style.transform = 'translate(0)'
-      this.currentIndex = 0
+    if(this.currentIndex === this.sliders.length){
+      this.wrapEle.style.transform = 'translate(0%)'
+      this.currentIndex = 1
       return
     }
     this.wrapEle.style.transform = `translate(-${(this.currentIndex * 100) / this.sliders.length}%)`

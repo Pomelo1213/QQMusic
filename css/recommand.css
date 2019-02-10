@@ -3,8 +3,41 @@
   .recommand.active {
     display: block; }
   .recommand .slider {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 14px; }
     .recommand .slider .slider-wrap {
-      display: flex; }
+      display: flex;
+      transition-duration: .3s; }
       .recommand .slider .slider-wrap .slider-item > a img {
         width: 100%; }
+  .recommand .radio {
+    padding: 0 8px; }
+    .recommand .radio .radio-title {
+      font-size: 16px;
+      margin-bottom: 11px; }
+    .recommand .radio .radio-wrap {
+      display: flex; }
+      .recommand .radio .radio-wrap .radio-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff; }
+        .recommand .radio .radio-wrap .radio-item:first-child {
+          margin-right: 8px; }
+        .recommand .radio .radio-wrap .radio-item .item-media {
+          position: relative; }
+          .recommand .radio .radio-wrap .radio-item .item-media .icon-play {
+            position: absolute;
+            background-image: url("/images/icon_play.png");
+            background-repeat: no-repeat;
+            background-size: 24px 60px;
+            right: 5px;
+            bottom: 10px; }
+          .recommand .radio .radio-wrap .radio-item .item-media img {
+            width: 100%; }
+        .recommand .radio .radio-wrap .radio-item .item-info {
+          height: 36px;
+          border: 1px solid #fff;
+          background-color: #fff; }
+          .recommand .radio .radio-wrap .radio-item .item-info h3 {
+            font-size: 14px; }
