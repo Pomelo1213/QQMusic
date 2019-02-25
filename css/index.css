@@ -76,6 +76,22 @@
           background-color: #fff; }
           .recommand .radio .radio-wrap .radio-item .item-info h3 {
             font-size: 14px; }
+  .recommand .hot-songs {
+    padding: 0 8px; }
+    .recommand .hot-songs .hot-songs-title {
+      font-size: 16px;
+      margin-bottom: 11px; }
+    .recommand .hot-songs .hot-songs-wrap {
+      display: flex; }
+      .recommand .hot-songs .hot-songs-wrap .hot-song-item {
+        flex: 1;
+        flex-direction: column;
+        background-color: #fff; }
+      .recommand .hot-songs .hot-songs-wrap .item-media {
+        position: relative; }
+        .recommand .hot-songs .hot-songs-wrap .item-media .icon-play {
+          position: absolute;
+          background-image: url("/images/icon_play.png"); }
 
 .search {
   display: none; }

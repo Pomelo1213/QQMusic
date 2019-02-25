@@ -19,17 +19,18 @@
   }
   .radio{
     padding: 0 8px;
-    .radio-title {
+    .radio-title{
       font-size: 16px;
       margin-bottom: 11px;
     }
-    .radio-wrap {
+    .radio-wrap{
       display: flex;
-      .radio-item {
+      .radio-item{
         &:first-child{
           margin-right:8px;
         }
         flex: 1;
+        // flex-basis: 50%;
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -60,6 +61,29 @@
           }
         }
 
+      }
+    }
+  }
+  .hot-songs{
+    padding: 0 8px;
+    .hot-songs-title {
+      font-size: 16px;
+      margin-bottom: 11px;
+    }
+    .hot-songs-wrap{
+      display: flex;
+      .hot-song-item {
+        flex: 1;
+        // flex-basis: 50%;
+        flex-direction: column;
+        background-color: #fff;
+      }
+      .item-media {
+        position: relative;
+        .icon-play {
+          position: absolute;
+          background-image: url('/images/icon_play.png')
+        }
       }
     }
   }
