@@ -47,13 +47,26 @@
       font-size: 16px;
       margin-bottom: 11px; }
     .recommand .hot-songs .hot-songs-wrap {
-      display: flex; }
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap; }
       .recommand .hot-songs .hot-songs-wrap .hot-song-item {
-        flex: 1;
-        flex-direction: column;
-        background-color: #fff; }
+        width: 49%;
+        margin-right: 2%;
+        background-color: #fff;
+        margin-bottom: 5px; }
+        .recommand .hot-songs .hot-songs-wrap .hot-song-item:nth-child(2n) {
+          margin-right: 0px; }
       .recommand .hot-songs .hot-songs-wrap .item-media {
         position: relative; }
+        .recommand .hot-songs .hot-songs-wrap .item-media img {
+          width: 100%; }
         .recommand .hot-songs .hot-songs-wrap .item-media .icon-play {
           position: absolute;
+          right: 5px;
+          bottom: 10px;
+          background-size: 24px 60px;
+          background-repeat: no-repeat;
           background-image: url("/images/icon_play.png"); }
+      .recommand .hot-songs .hot-songs-wrap .item-info h3 {
+        font-size: 14px; }
