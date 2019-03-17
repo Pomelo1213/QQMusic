@@ -1,7 +1,29 @@
+@import './global.scss';
 
 .rank {
   display: none;
   &.active {
     display: block;
+  }
+  .rank-view {
+    border: 1px solid;
+    display: flex;
+    img {
+      @include size(100px);
+    }
+    .rank-view-wrap {
+      flex: 1;
+      padding: 4px 10px 4px 15px;
+      h3 {
+        font-size: 16px;
+        margin-bottom: 3px;
+      }
+      p{
+        color: rbga(0, 0, 0, .3);
+      }
+      .song-name {
+        color: rgba(0, 0, 0, 1);
+      }
+    }
   }
 }

@@ -2,3 +2,19 @@
   display: none; }
   .rank.active {
     display: block; }
+  .rank .rank-view {
+    border: 1px solid;
+    display: flex; }
+    .rank .rank-view img {
+      width: 100px;
+      height: 100px; }
+    .rank .rank-view .rank-view-wrap {
+      flex: 1;
+      padding: 4px 10px 4px 15px; }
+      .rank .rank-view .rank-view-wrap h3 {
+        font-size: 16px;
+        margin-bottom: 3px; }
+      .rank .rank-view .rank-view-wrap p {
+        color: rbga(0, 0, 0, 0.3); }
+      .rank .rank-view .rank-view-wrap .song-name {
+        color: black; }
