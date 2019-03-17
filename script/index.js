@@ -21,12 +21,12 @@
   let slider = new Slider(options)
   window.slider = slider
   renderRecommandContent()
-
-  let view = document.querySelectorAll('.tab-item')
-  Array.from(view).forEach(item => {
-    if(item.dataset.item === 'rank'){
-      item.click()
-    }
-  })
+  renderRankContent()
+  // let view = document.querySelectorAll('.tab-item')
+  // Array.from(view).forEach(item => {
+  //   if(item.dataset.item === 'rank'){
+  //     item.click()
+  //   }
+  // })
 
 })()

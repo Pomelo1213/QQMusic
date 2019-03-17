@@ -2,28 +2,61 @@
 
 .rank {
   display: none;
+  padding: 10px;
+  background-color: #f4f4f4;
   &.active {
     display: block;
   }
   .rank-view {
-    border: 1px solid;
+    background-color: #fff;
     display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
     img {
       @include size(100px);
     }
     .rank-view-wrap {
       flex: 1;
-      padding: 4px 10px 4px 15px;
+      padding: 4px 15px 4px 15px;
+      overflow: hidden;
       h3 {
         font-size: 16px;
         margin-bottom: 3px;
       }
       p{
+        font-size: 14px;
+        width: 100%;
         color: rbga(0, 0, 0, .3);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        word-break: break-all;
       }
       .song-name {
         color: rgba(0, 0, 0, 1);
       }
+    }
+    .listen-number {
+      position: absolute;
+      bottom: 2px;
+      left: 4px;
+      font-size: 12px;
+      color: #fff;
+      opacity: .6;
+    }
+    &::after {
+      position: absolute;
+      @include size(7px);
+      content: '';
+      right: 7px;
+      top: 50%;
+      margin-top: -4px;
+      transform: rotate(-45deg);
+      border-right:1px solid #aaa;
+      border-bottom: 1px solid #aaa;
     }
   }
 }

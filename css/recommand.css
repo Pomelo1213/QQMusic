@@ -1,5 +1,6 @@
 .recommand {
-  display: none; }
+  display: none;
+  overflow: hidden; }
   .recommand.active {
     display: block; }
   .recommand .slider {

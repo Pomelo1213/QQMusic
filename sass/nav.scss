@@ -3,6 +3,7 @@ $tabsHeight: 40px;
   display: flex;
   height: $tabsHeight;
   line-height:$tabsHeight;
+  background-color: #fff;
   .tab-item {
     flex: 1;
     text-align: center;
