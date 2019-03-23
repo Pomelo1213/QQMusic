@@ -1,5 +1,6 @@
 function renderSearchContent(){
-  fetch('../json/search.json')
+  // fetch('../json/search.json')
+  fetch('https://127.0.0.1:8089/search')
   .then(response => response.json())
   .then(render)
 
@@ -13,7 +14,7 @@ function renderSearchContent(){
         <div class="hot-search-item">${data[getRandom(length)].k}</div>
       `
     })
-    temp.unshift(`<div class="hot-search-item special">${specialKey}</div>`)
+    temp.push(`<div class="hot-search-item special">${specialKey}</div>`)
     hotSearchEle.innerHTML = temp.reverse().join('')
   }
   function getRandom(length){
