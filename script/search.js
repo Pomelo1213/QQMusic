@@ -13,7 +13,7 @@ function renderSearchContent(){
         <div class="hot-search-item">${data[getRandom(length)].k}</div>
       `
     })
-    temp.push(`<div class="hot-search-item special">${specialKey}</div>`)
+    temp.unshift(`<div class="hot-search-item special">${specialKey}</div>`)
     hotSearchEle.innerHTML = temp.reverse().join('')
   }
   function getRandom(length){
