@@ -51,7 +51,10 @@
       overflow: hidden; }
       .rank .rank-view .rank-view-wrap h3 {
         font-size: 16px;
-        margin-bottom: 3px; }
+        margin-bottom: 3px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
       .rank .rank-view .rank-view-wrap p {
         font-size: 14px;
         width: 100%;
