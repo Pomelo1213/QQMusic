@@ -35,13 +35,30 @@
   <section class="rank">
     <ul id="rankViewList"></ul>
   </section>
-  <section class="search"> this is search </section>
+  <section class="search">
+    <div class="search-input-wrap">
+      <form class="search-input" method="get" action="#">
+        <input type="text" placeholder="搜索歌曲、歌单、专辑"/>
+        <span class="search-icon"></span>
+      </form>
+      <div class="input-cancel">取消</div>
+    </div>
+    <div class="hot-search-word-wrap">
+      <p class="hot-word-title">热门搜索</p>
+      <div id="hotWord" class="hot-search-word">
+        <div class="hot-search-item">beishang</div>
+        <div class="hot-search-item">1231</div>
+        <div class="hot-search-item">fjdks</div>
+      </div>
+    </div>
+  </section>
 
   <script src="./script/tabs.js"></script>
   <script src="./script/slider.js"></script>
 
   <script src="./script/recommand.js"></script>
   <script src="./script/rank.js"></script>
+  <script src="./script/search.js" ></script>
   <script src="./script/index.js"></script>
 </body>
 </html>

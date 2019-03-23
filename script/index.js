@@ -22,11 +22,12 @@
   window.slider = slider
   renderRecommandContent()
   renderRankContent()
-  // let view = document.querySelectorAll('.tab-item')
-  // Array.from(view).forEach(item => {
-  //   if(item.dataset.item === 'rank'){
-  //     item.click()
-  //   }
-  // })
+  renderSearchContent()
+  let view = document.querySelectorAll('.tab-item')
+  Array.from(view).forEach(item => {
+    if(item.dataset.item === 'search'){
+      item.click()
+    }
+  })
 
 })()
