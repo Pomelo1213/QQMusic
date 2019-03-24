@@ -1,6 +1,5 @@
 function renderSearchContent(){
-  // fetch('../json/search.json')
-  fetch('https://127.0.0.1:8089/search')
+  fetch(`${localUrl}/search`)
   .then(response => response.json())
   .then(render)
 

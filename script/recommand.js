@@ -1,9 +1,7 @@
 function renderRecommandContent(){
-  fetch('../json/recommand.json')
+  fetch(`${localUrl}/recommand`)
   .then(response => response.json())
   .then(render)
-  // .then(renderRadio)
-  // .then(renderHotSongs)
   function render(json){
     renderRadio(json)
     renderHotSongs(json)

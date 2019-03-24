@@ -1,5 +1,5 @@
 function renderRankContent(){
-  fetch('../json/rank.json')
+  fetch(`${localUrl}/rank`)
   .then(response => response.json())
   .then(render)
 

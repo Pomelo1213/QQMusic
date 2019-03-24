@@ -10,23 +10,30 @@ const HEADS = {
 const app = express()
 app.use(cors())
 
-function fetch(url, response){
-  requestPro({
-    uri: url,
-    json: true,
-    headers: HEADS
-  })
-  .then(res => console.log('this si res', res))
+async function fetch(url, response){
+  try{
+    response.json(await requestPro({
+      uri: url,
+      json: true,
+      headers: HEADS
+    }))
+  }catch(error){
+    console.log('this is error-->', err)
+  }
 }
-app.get('/', () => {
 
+app.get('/search', async (req, res) => {
+  const url = 'https://c.y.qq.com/splcloud/fcgi-bin/gethotkey.fcg?_=1553421880513&g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1'
+  await fetch(url, res)
 })
-app.get('/command',(req, res) => {
-  const url = 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg?_=1553352668903&g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1'
-  fetch(url, res).then(reponse => { console.log('this is response', response)})
+app.get('/recommand', async (req, res) => {
+  const url = 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg?_=1553422369734&g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1'
+  await fetch(url, res)
 })
-app.get('/rank', (req, res) => {})
-app.get('/search', (req, res) => {})
+app.get('/rank', async (req, res) => {
+  const url = 'https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg?_=1553422369741&g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1'
+  await fetch(url, res)
+})
 
 app.listen(PORT)
 console.log('server is running!')
